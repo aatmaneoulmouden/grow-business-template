@@ -3,6 +3,14 @@
 :root {
     --primary-color: #fca311;
     --secondary-color: #14213d;
+    --gray-color: #e5e5e5;
+    
+    --primary-color-hover: #e58600;
+    --secondary-color-hover: #0e182b;
+
+    --header-height: 80px;
+
+    --transition-delay: .5s;
 }
 
 * {
@@ -10,19 +18,75 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-container {
+    max-width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+    height: 100%;
+}
+
+.btn {
+    text-align: center;
+    padding: 16px 32px;
+    color: white;
+    transition: background-color var(--transition-delay);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
 }
 
 /* Header styling */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
     background-color: var(--primary-color);
 }
 
 .header-container {
-    padding: 24px 96px;
+    height: 100%;
+    padding: 0 96px;
     margin: auto;
 }
 
 header .flex-container {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +95,6 @@ header .flex-container {
 .logo {
     font-size: 26px;
     font-weight: 500;
-    text-decoration: none;
     color: white;
 }
 
@@ -40,7 +103,6 @@ header .flex-container {
 }
 
 .menu-list {
-    list-style: none;
     display: flex;
     gap: 24px;
 }
@@ -48,11 +110,70 @@ header .flex-container {
 .menu-link {
     color: white;
     text-transform: uppercase;
-    text-decoration: none;
     font-size: 18px;
-    transition: all .5s;
+    transition: color var(--transition-delay);
 }
 
 .menu-link:hover {
     color: var(--secondary-color);
+}
+
+/* Home styling */
+.home-section {
+    width: 100%;
+    height: calc(80vh - var(--header-height));
+    margin-top: var(--header-height);
+    background-image: linear-gradient(rgba(20, 33, 61, .7), rgba(20, 33, 61, .7)),url('/assets/images/hero.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.homeSwiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeSwiper h2 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.homeSwiper h2 span {
+    color: var(--primary-color);
+}
+
+.homeSwiper p {
+    margin: 24px 0;
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.cta-btns-container {
+    display: flex;
+    gap: 24px;
+}
+
+.homeSwiper .btn {
+    width: 160px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 48px;
+    height: 48px;
+    color: white;
+    cursor: pointer;
+}
+
+.swiper-button-next{
+    background-color: var(--primary-color);
+}
+
+.swiper-button-prev{
+    background-color: var(--secondary-color);
 }
