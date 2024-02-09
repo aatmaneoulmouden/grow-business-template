@@ -143,7 +143,7 @@ header .flex-container {
 /* Home styling */
 .home-section {
     width: 100%;
-    height: calc(80vh - var(--header-height));
+    height: calc(90vh - var(--header-height));
     margin-top: var(--header-height);
     background-image: linear-gradient(rgba(20, 33, 61, .7), rgba(20, 33, 61, .7)), url('/assets/images/hero.webp');
     background-size: cover;
