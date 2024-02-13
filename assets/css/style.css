@@ -309,9 +309,17 @@ header .flex-container {
 }
 
 /* What we do styling */
+.services-section .section-title {
+ margin-bottom: 12px;
+}
+
+.services-section .subtitle {
+    margin-bottom: 24px;
+}
+
 .services-wrapper {
     display: flex;
-    gap: 24px;
+    gap: 52px;
     margin-top: 24px;
 }
 
@@ -324,4 +332,6 @@ header .flex-container {
 
 .service-desc {
     margin-bottom: 16px;
+    line-height: 24px;
+    text-align: left;
 }
