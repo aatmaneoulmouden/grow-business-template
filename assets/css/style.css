@@ -116,6 +116,25 @@ img {
     margin-bottom: 48px;
 }
 
+.two-inputs {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.main-input {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.main-input:focus {
+    border-color: var(--secondary-color);
+}
+
 /* Header styling */
 header {
     position: fixed;
@@ -436,4 +455,34 @@ header .flex-container {
 
 .blog-title:hover {
     color: var(--primary-color);
+}
+
+
+/* Contact section styling */
+.contact-section .flex-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.map {
+    align-self: stretch;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.form .input-wrapper:not(:last-child) {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+div[data-lastpass-icon-root] { /* hide lastpass icon */
+    display: none;
+}
+
+.form textarea {
+    resize: none;
 }
