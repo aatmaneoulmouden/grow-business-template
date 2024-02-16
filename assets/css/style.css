@@ -490,8 +490,12 @@ div[data-lastpass-icon-root] {
 
 /* Footer styling */
 footer {
-    padding: 96px 0;
+    padding: 96px 0 48px;
     background: var(--black-color);
+}
+
+footer .top {
+    padding-bottom: 48px;
 }
 
 footer .flex-wrapper {
@@ -567,4 +571,22 @@ ul.sm-list i {
 
 ul.sm-list a:hover i {
     color: var(--primary-color);
+}
+
+footer .bottom .main-container {
+    padding-top: 48px;
+    border-top: 1px solid var(--gray-color);
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: var(--primary-color);
+    transition: color var(--transition-delay);
+}
+
+.copyright a:hover {
+    color: var(--primary-color-hover);
 }
