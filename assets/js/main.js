@@ -10,3 +10,14 @@ var swiper = new Swiper(".homeSwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// Menu links
+const menuLinks = document.querySelectorAll('.menu-link');
+menuLinks.forEach(activeLink => {
+    activeLink.addEventListener('click', () => {
+        menuLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        activeLink.classList.add('active');
+    });
+});

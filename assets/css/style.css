@@ -185,7 +185,8 @@ header .flex-container {
     transition: color var(--transition-delay);
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.menu-link.active {
     color: var(--secondary-color);
 }
 
