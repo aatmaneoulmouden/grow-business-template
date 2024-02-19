@@ -595,3 +595,58 @@ footer .bottom .main-container {
 .copyright a:hover {
     color: var(--primary-color-hover);
 }
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(14, 24, 43, .5);
+    background: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 80px;
+    background: var(--gray-color);
+}
+
+.popup-close-btn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d62828;
+    cursor: pointer;
+}
+
+.popup-close-btn:hover {
+    transform: scale(1.2);
+}
+
+.popup-close-btn i {
+    color: white;
+}
+
+.popup iframe {
+    width: 100%;
+    height: 100%;
+}

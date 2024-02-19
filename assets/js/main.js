@@ -58,3 +58,16 @@ window.addEventListener('scroll', () => {
         document.querySelector('#contact-link').classList.add('active');
     }
 });
+
+// Open/Close popup
+const popup = document.querySelector('.popup');
+
+document.querySelectorAll('.open-popup-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        popup.classList.add('active');
+    });
+});
+
+document.querySelector('.popup-close-btn').addEventListener('click', () => {
+    popup.classList.remove('active');
+});
