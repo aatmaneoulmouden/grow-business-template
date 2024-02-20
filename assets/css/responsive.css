@@ -9,4 +9,8 @@
     .blogs-wrapper {
         gap: 24px;
     }
+
+    .popup-content {
+        width: 90%;
+    }
 }

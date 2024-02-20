@@ -619,9 +619,9 @@ footer .bottom .main-container {
 .popup-content {
     position: relative;
     width: 80%;
-    height: 80%;
     box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 80px;
     background: var(--gray-color);
+    aspect-ratio: 16/9;
 }
 
 .popup-close-btn {
