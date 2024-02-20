@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+    .main-container {
+        max-width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .services-wrapper,
+    .blogs-wrapper {
+        gap: 24px;
+    }
+}
