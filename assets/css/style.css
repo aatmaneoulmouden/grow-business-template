@@ -122,8 +122,13 @@ img {
 
 .two-inputs {
     display: flex;
+    flex-wrap: wrap;
     gap: 18px;
     align-items: center;
+}
+
+.two-inputs .main-input {
+    flex: 200px 1 1;
 }
 
 .main-input {
@@ -354,11 +359,13 @@ header .flex-container {
 /* What we do styling */
 .services-wrapper {
     display: flex;
-    gap: 52px;
+    flex-wrap: wrap;
+    gap: 28px;
     margin-top: 24px;
 }
 
 .service {
+    flex: 240px 1 1;
     position: relative;
     padding: 12px;
     padding-bottom: 18px;
@@ -505,11 +512,13 @@ footer .top {
 
 footer .flex-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 28px;
+    row-gap: 48px;
 }
 
 .footer-col {
-    flex: 1;
+    flex: 1 1 calc(25% - 28px);
 }
 
 .footer-title {

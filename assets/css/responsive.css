@@ -1,8 +1,6 @@
 @media (max-width: 1024px) {
     .main-container {
         max-width: 90%;
-        height: 100%;
-        margin: auto;
     }
 
     .services-wrapper,
@@ -12,5 +10,38 @@
 
     .popup-content {
         width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        width: 96%;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .main-container {
+        max-width: 96%;
+    }
+
+    .homeSwiper h2 {
+        font-size: 48px;
+    }
+
+    .about-section .flex-wrapper,
+    .our-work-section .flex-wrapper {
+        gap: 0;
+    }
+
+    .heading .subtitle {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .services-wrapper,
+    .blogs-wrapper {
+        gap: 16px;
     }
 }
