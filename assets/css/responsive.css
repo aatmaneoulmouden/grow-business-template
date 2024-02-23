@@ -73,3 +73,59 @@
         gap: 16px;
     }
 }
+
+@media (max-width: 425px) {
+    .section-title.mobile-title {
+        display: block;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .homeSwiper h2 {
+        font-size: 28px;
+    }
+
+    .homeSwiper p {
+        max-width: 100%;
+    }
+
+    .cta-btns-container {
+        flex-direction: column;
+    }
+
+    .homeSwiper .btn {
+        width: 300px;
+    }
+
+    .about-section .flex-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .two-cols .col {
+        width: 100%;
+    }
+
+    .about-section .flex-wrapper {
+        gap: 24px;
+    }
+
+    .open-popup-col {
+        display: none;
+    }
+
+    .blogs-wrapper {
+        flex-direction: column;
+        row-gap: 28px;
+    }
+
+    .contact-section .flex-wrapper {
+        flex-direction: column-reverse;
+    }
+}

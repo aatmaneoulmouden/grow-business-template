@@ -96,6 +96,11 @@ img {
     color: var(--secondary-color);
 }
 
+.section-title.mobile-title {
+    text-align: center;
+    display: none;
+}
+
 .section-text {
     line-height: 28px;
     text-align: justify;
