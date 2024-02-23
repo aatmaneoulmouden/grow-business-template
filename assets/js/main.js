@@ -1,3 +1,19 @@
+// Open/Close menu
+const menuToggler = document.querySelector('#menu-toggler');
+const menuTogglerIcon = document.querySelector('#menu-toggler i');
+const menuItems = document.querySelectorAll('.menu-item');
+const menu = document.querySelector('.menu-list');
+
+function toggleActiveClass() {
+    menu.classList.toggle('active');
+    menuTogglerIcon.classList.toggle('fa-xmark');
+}
+
+menuToggler.addEventListener('click', toggleActiveClass);
+menuItems.forEach(item => {
+    item.addEventListener('click', toggleActiveClass);
+});
+
 // Home swiper
 var swiper = new Swiper(".homeSwiper", {
     loop: true,

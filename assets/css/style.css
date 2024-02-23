@@ -195,6 +195,13 @@ header .flex-container {
     color: var(--secondary-color);
 }
 
+.menu-toggler {
+    background: none;
+    color: white;
+    font-size: 28px;
+    display: none
+}
+
 /* Home styling */
 .home-section {
     width: 100%;

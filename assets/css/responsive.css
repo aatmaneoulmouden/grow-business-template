@@ -18,8 +18,36 @@
         width: 96%;
     }
 
+    .header-container {
+        position: relative;
+    }
+
+    .menu-toggler {
+        display: block;
+    }
+
     .menu-list {
         display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 28px;
+        position: absolute;
+        top: calc(100% + 18px);
+        left: 0;
+        right: 0;
+        height: auto;
+        width: 100%;
+        padding: 32px;
+        background: var(--primary-color);
+    }
+
+    .menu-list.active {
+        display: flex;
+    }
+
+    .menu-item {
+        text-align: center;
     }
 
     .main-container {
