@@ -212,7 +212,7 @@ header .flex-container {
     width: 100%;
     height: calc(90vh - var(--header-height));
     margin-top: var(--header-height);
-    background-image: linear-gradient(rgba(20, 33, 61, .7), rgba(20, 33, 61, .7)), url('/assets/images/hero.webp');
+    background-image: linear-gradient(rgba(20, 33, 61, .7), rgba(20, 33, 61, .7)), url('./assets/images/hero.webp');
     background-size: cover;
     background-position: center;
 }
@@ -308,7 +308,7 @@ header .flex-container {
 
 /* Our Work styling */
 .our-work-section {
-    background-image: linear-gradient(rgba(20, 33, 61, .8), rgba(20, 33, 61, .8)), url('/assets/images/our_work.webp');
+    background-image: linear-gradient(rgba(20, 33, 61, .8), rgba(20, 33, 61, .8)), url('./assets/images/our_work.webp');
     background-position: center;
     background-size: cover;
 }
